@@ -1,0 +1,56 @@
+Windows Registry Editor Version 5.00
+
+; Created by: LostOnTheLine
+; Created on: 2023-9-12
+; Updated on: 2023-10-2
+
+
+; Blank Document
+[-HKEY_CLASSES_ROOT\.blank\ShellNew]
+[HKEY_CLASSES_ROOT\.blank\ShellNew]
+
+"NullFile"=""
+
+
+[-HKEY_CLASSES_ROOT\.blank]
+
+[HKEY_CLASSES_ROOT\.blank]
+@="blankfile"
+"Content Type"="text/plain"
+"PerceivedType"="text"
+
+[HKEY_CLASSES_ROOT\.blank\ShellNew]
+"NullFile"=""
+
+; This line makes it so that when the new file is created it does not have an extension
+[HKEY_CLASSES_ROOT\.blank\ShellNew\Config]
+"NoExtension"=""
+
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\.blank]
+
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.blank]
+"PerceivedType"="document"
+
+[-HKEY_CLASSES_ROOT\blankfile]
+
+[HKEY_CLASSES_ROOT\blankfile]
+@="Blank File"
+"EditFlags"=dword:00210000
+
+
+[-HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.blank]
+
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.blank\OpenWithList]
+
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.blank\OpenWithProgids]
+"blankfile"=hex(0):
+
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.blank\UserChoice]
+"Hash"="hyXk/CpboWw="
+"ProgId"="blankfile"
+
+[-HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\Roaming\OpenWith\FileExts\.blank]
+
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\Roaming\OpenWith\FileExts\.blank\UserChoice]
+"Hash"="FvJcqeZpmOE="
+"ProgId"="blankfile"
